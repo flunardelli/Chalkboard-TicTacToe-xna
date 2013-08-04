@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChalkTicTacToe.exe" version="1.0.0.2" publicKeyToken="4e6c771b7aa1527a" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChalkTicTacToe" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ChalkTicTacToe.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Game" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.GamerServices" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Graphics" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Input.Touch" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChalkTicTacToe.exe" size="24576">
+      <assemblyIdentity name="ChalkTicTacToe" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>VRF2Y4be8MRi0bSHhLXmIlfdQtM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Content\sounds\SoundClick.xnb" size="31173">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>S4Zaog0OfJxLfQ8XuHeHMlbiLL0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sounds\SoundO.xnb" size="91605">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0u/V41/aJLizRk/clX1A3jZkJsQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sounds\SoundX.xnb" size="84777">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5Seca7sXcc93+HiM1SxsgKivA8A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\SpriteFontScore.xnb" size="8926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ttL+LfkqG2DXi9EXU6z73cAu8ak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\Blackboard.xnb" size="259142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ceqWRP6oLgmsTAKBaz3v6r1hLOM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\BlackboardGrid.xnb" size="37384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>W1cXZ9c+BuiKADge50eKf/3mi6I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\BlackboardGridCell.xnb" size="326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vH/aDBr3Sts6Dd/CD/BuDufwHd8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuLogo.xnb" size="45710">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2fWu0Rt0f+xHJd90YL8TGXhCr2w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuOnePlayer.xnb" size="3746">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X7FmqIt2GO+T8XQkYu3fgxJwg/Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuOnePlayer2.xnb" size="3750">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>R1EXUcc03W8ayfZNAKlyt1MRe6I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuQuit.xnb" size="1398">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+E0C6YEoerHT/0JX0WSqRJ263sU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuScore.xnb" size="8544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dPhEvbu526nok9xTK3Sto009aC8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\MenuTwoPlayers.xnb" size="3180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xRak2IQo6vXcONez6EbJQ9Ic85c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\Restart.xnb" size="1994">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mmzDNqIuu7oAFH48y2r+LN4uh9A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreDraw.xnb" size="6222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SnMy/s24bxUmWcOAhtz0h2I84X4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreMenu.xnb" size="3806">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aJzWl7X5s59uv564b+l/8igpyzQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreRematch.xnb" size="4032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hmNPF09vMprMC8+vkvlvH/xvWBc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreStart.xnb" size="15432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KT8J1cWtz1vVj5/3HEtTZ9A4poc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreTurnO.xnb" size="6594">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AAJ55D86juGWfThmnEsv1gQj2i4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreTurnX.xnb" size="6870">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wzmwx/fn86F91v0Tv/S22O5VScw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreWinO.xnb" size="6196">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iyskvdL8+6jRly3DCLn5OWG+cWg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\ScoreWinX.xnb" size="5734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MUh7WG8eg+nXES0VsBOeWt3kvaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\SheetLine.xnb" size="9194">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8rbBEKZblRmheIbT79JiTiZg02E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\SheetO.xnb" size="15802">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+V8m/xzmuluPIFozJy/1Lxl0BMs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\sprites\SheetX.xnb" size="16906">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GUVTogT1HWkoUwHWXofb524+Lww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Game.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/y21PfwGnUAkwpPwwaFuIIyWENo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GameThumbnail.png" size="5734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>diNvdcDpDtGEMuMQIHpkKK3qVHc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=lumea-PC\lumea" issuerKeyHash="279deb910057280a736dea584ae3f0aeee5b5dd4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2xTeNBo0EXPNhMH03YLirxWTws4=</DigestValue></Reference></SignedInfo><SignatureValue>lw/xIKULxC6JWYEtplJdmiXLGxJrXxkwSbh/JnnVUl1U+RnBQnPT/4EdymGvzoZzf5EMx2/dVjoqSb01aKD19CSnTVJFL5BCBw59d1Ky7nn0E06k3WfGhOW2AQuq9cI21wE2VWucs7uVFpo8cUMNzuKJUU3bDxCZ9CSEaMciDHA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xXeL9KHmHa3MVINNwxSAPbL2rboUFZSBE4EkumVykznwxFCKjyxbhdy9MrwcVAjs69SelFkI1n4Gz0WZbjv/P9AHQyYUe6deDz4GUcqpEGgU1n/2Rhxj2y7vp0cG7/JTsx3JzCqmEs0kdBTNN3bK/5GhrPO0akHXYTmHuk2DMq0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="cec29315afe282ddf4c184cd7311341a34de14db" Description="" Url=""><as:assemblyIdentity name="ChalkTicTacToe.exe" version="1.0.0.2" publicKeyToken="4e6c771b7aa1527a" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=lumea-PC\lumea</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yWuuEHGJ+uOjg4ztDXKV7ByDUiE=</DigestValue></Reference></SignedInfo><SignatureValue>ZbaD/b3I+vnHI8pZUlHkqxz4D9xCMwA5b9HMpSCNZdJ38/XRSHnsQg5Ech+Z4QatsW48fYwU52n1/yBmF1TO1sJ57nh05Cp/WGnXQfCSqSQW/lEP6sq5rekLqNq0Pdlz6JrKelMxG/2GMnkjXplRQuHmq/L2XR5voaEVhgBJbjE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xXeL9KHmHa3MVINNwxSAPbL2rboUFZSBE4EkumVykznwxFCKjyxbhdy9MrwcVAjs69SelFkI1n4Gz0WZbjv/P9AHQyYUe6deDz4GUcqpEGgU1n/2Rhxj2y7vp0cG7/JTsx3JzCqmEs0kdBTNN3bK/5GhrPO0akHXYTmHuk2DMq0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQaNAasSnEobVE8pwMQUldMDANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwAbAB1AG0AZQBhAC0AUABDAFwAbAB1AG0AZQBhMB4XDTEzMDczMTAwNTMyNFoXDTE0MDczMTA2NTMyNFowJzElMCMGA1UEAx4cAGwAdQBtAGUAYQAtAFAAQwBcAGwAdQBtAGUAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxXeL9KHmHa3MVINNwxSAPbL2rboUFZSBE4EkumVykznwxFCKjyxbhdy9MrwcVAjs69SelFkI1n4Gz0WZbjv/P9AHQyYUe6deDz4GUcqpEGgU1n/2Rhxj2y7vp0cG7/JTsx3JzCqmEs0kdBTNN3bK/5GhrPO0akHXYTmHuk2DMq0CAwEAATANBgkqhkiG9w0BAQUFAAOBgQA5asjHrEPGH/+xMhUVJCZAR71l5KvHEPjquWWzQegaeJubsEE8ilqpyIZgf2s8KNoZA4C3lLhVn4bBxhF94Tka5pdQPcakCYeG5h8FJPseAbXA3OeyZu0OfCiiGeejgnGvcq9Q0rWtQCZT4YFIc/vVwUN8FcviYjOmLFg0eKka6Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
